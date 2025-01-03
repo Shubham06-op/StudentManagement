@@ -1,4 +1,4 @@
-## Library Management System - Flask API
+# Library Management System - Flask API
 
 # Project Overview:
 This project is a simple Library Management System built using Flask, with features for managing books and members. It supports CRUD (Create, Read, Update, Delete) operations for both books and members. Additionally, it provides optional pagination, search functionality, and token-based authentication (JWT) for added security.
