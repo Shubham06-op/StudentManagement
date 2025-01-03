@@ -34,13 +34,21 @@ Access the API: The application will run locally on http://127.0.0.1:5000/. You 
 # Endpoints:
 
 POST /auth/login: Login route to authenticate and generate JWT token.
+
 GET /books: List all books.
+
 POST /books: Add a new book.
+
 PUT /books/<id>: Update an existing book.
+
 DELETE /books/<id>: Delete a book.
+
 GET /members: List all members.
+
 POST /members: Add a new member.
+
 PUT /members/<id>: Update an existing member.
+
 DELETE /members/<id>: Delete a member.
 For more details on the API, refer to the documentation below.
 
