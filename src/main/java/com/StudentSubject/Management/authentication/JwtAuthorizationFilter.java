@@ -31,10 +31,8 @@ public class JwtAuthorizationFilter implements Filter {
                         .parseClaimsJws(token)
                         .getBody();
 
-                // Set the authentication in Spring Security context
                 String username = claims.getSubject();
-                // Add any roles from claims as needed
-                // Set the authentication in context (omitted for simplicity)
+               
 
             } catch (Exception e) {
                 httpResponse.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
