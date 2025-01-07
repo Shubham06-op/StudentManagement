@@ -14,13 +14,11 @@ public class StudentController {
     @Autowired
     private StudentRepository studentRepository;
 
-    // POST: Create a new student
     @PostMapping
     public StudentEntity createStudent(@RequestBody StudentEntity student) {
         return studentRepository.save(student);
     }
 
-    // GET: Get all students
     @GetMapping
     public List<StudentEntity> getAllStudents() {
         return studentRepository.findAll();
