@@ -14,13 +14,11 @@ public class SubjectController {
     @Autowired
     private SubjectRepository subjectRepository;
 
-    // POST: Create a new subject
     @PostMapping
     public SubjectEntity createSubject(@RequestBody SubjectEntity subject) {
         return subjectRepository.save(subject);
     }
 
-    // GET: Get all subjects
     @GetMapping
     public List<SubjectEntity> getAllSubjects() {
         return subjectRepository.findAll();
